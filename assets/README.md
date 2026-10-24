@@ -2,6 +2,8 @@
 
 This folder contains selected, public-facing images from the October 2026 DoughWatch v0.2 experiment.
 
+- `field-run-2026-10-24.svg` — Chart of the first **150-minute field trial** built from the recorded v0.2 smoothed projected-area series. Its candidate peak and subsequent decline are **unvalidated optical signals**, not measured dough volume. See the [first field report](../docs/field-report-2026-10-24.md).
+
 - `doughwatch-showcase.png` — Designed project-presentation graphic. This is a **composite visual** derived from prototype screenshots, not an unmodified instrument capture.
 - `doughwatch-live-v02.png` — Original dashboard screenshot showing the live ROI, dough mask, 31.5% *reported* projected-area increase, and growth curve.
 - `doughwatch-actual-comparison.png` — Comparison made from two real dashboard captures, one at baseline and one during later monitoring.
