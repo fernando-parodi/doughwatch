@@ -22,7 +22,7 @@ The engineering objective is straightforward: **measure what fermentation is doi
 
 [![First poolish field trial — experimental smoothed projected-area signal over 150 minutes](assets/field-run-2026-10-24.svg)](docs/field-report-2026-10-24.md)
 
-The first live run recorded **150 observations over 2 hours 30 minutes**. The prototype's **smoothed projected-image-area signal** reached **+77.53%** at approximately **21:20 Dubai time**, then ended **6.22 percentage points below that high point** about 32 minutes later. This is a **candidate fermentation peak and decline**, not yet a validated physical-volume measurement or automatic readiness determination.
+The first live run recorded **150 observations over 2 hours 30 minutes**. The prototype's **smoothed projected-image-area signal** reached **+77.53%** at **21:20 Dubai time**, then ended **6.22 percentage points below that maximum**. A separate v0.2.1 offline tracker replayed all **150 original photographs**, independently locating a candidate peak at **21:23** and a subsequent **6.04-percentage-point decline**. A comparison of three original photographs also found an **approximately 4–6-pixel downward shift** in the apparent upper surface boundary by 21:52. **The candidate peak is now independently reproduced and visually corroborated**, but the image-based measurement is not yet calibrated or reliable enough for automated readiness decisions.
 
 **[↗ Read Field Report 01 — measurements, anomalies, and next validation gates](docs/field-report-2026-10-24.md)**
 
@@ -107,7 +107,7 @@ This result directly informs the next design iteration.
 | --- | --- | --- |
 | **v0.1** | Live camera monitoring; rectangular ROI; single-edge height tracking | Completed proof of concept |
 | **v0.2** | User-traced dough silhouette; projected-area monitoring; local time series; experimental fermentation states | First 150-sample field trial recorded; measurement accuracy under validation |
-| **v0.2.1** | Independent read-only anomaly validator and experimental stabilized offline tracker | Under validation; not integrated into v0.2 |
+| **v0.2.1** | Independent read-only validator and stabilized offline tracker; complete 150-frame peak replay | Candidate peak reproduced; 71/150 mask updates held; still experimental |
 | **Later research** | Hailo-accelerated dough segmentation; evaluation across lighting, bowls, and batches | Planned |
 
 ### Current engineering priorities
