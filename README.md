@@ -1,5 +1,9 @@
 # DoughWatch
 
+[![DoughWatch — project showcase: ROI, outline, baseline, and experimental growth monitoring](assets/doughwatch-showcase.png)](assets/doughwatch-showcase.png)
+
+*Project showcase graphic composed from prototype screenshots; it is a presentation illustration, not an unmodified scientific capture.*
+
 **Optical fermentation intelligence at the edge.**
 
 DoughWatch is an experimental, camera-based fermentation monitor developed on a **Raspberry Pi 5**. It observes how poolish and other preferments change shape over time, building a growth history to investigate the transition from active expansion to a plateau and eventual decline.
@@ -12,6 +16,14 @@ The engineering objective is straightforward: **measure what fermentation is doi
 [![Design](https://img.shields.io/badge/design-offline--first-426b55?style=flat-square)](#system-architecture)
 
 > **Prototype / research status.** DoughWatch is not yet a validated fermentation-readiness instrument. Current measurements reflect *projected dough area in the camera image*, not physical volume, and require reliability checks before readiness alerts can be trusted.
+
+
+## Live prototype — October 2026
+
+![Unmodified DoughWatch v0.2 dashboard showing poolish segmentation in a fixed ROI, with a reported 31.5% projected-area change and an experimental growth chart](assets/doughwatch-live-v02.png)
+
+*Actual running dashboard, not a mockup. The **31.5%** figure is the prototype's reported change in segmented **image area**; it is not a verified dough-volume increase. The experiment contains a known segmentation instability, described below.*
+
 
 ## Why this project exists
 
@@ -56,6 +68,13 @@ flowchart TD
 **Offline-first by design:** acquisition, analysis, and storage are local. The browser provides an inspection interface; cloud connectivity is not required for the core measurement process.
 
 ## What the experiment has shown
+
+### Image progression: initial mask to later observation
+
+![Two real DoughWatch dashboard captures showing the initial poolish baseline and a later segmented-area measurement](assets/doughwatch-actual-comparison.png)
+
+*Two captures from the same experiment, showing the segmentation and dashboard progression. The later mask and numerical percentage must not be treated as proof of equivalent physical fermentation growth; the first run exposed a measurement artifact.*
+
 
 The first live run established a **49,635-pixel baseline**, representing **24.97%** of the selected observation window. With one-minute sampling, DoughWatch produced a time series and a real-time highlighted segmentation mask.
 
