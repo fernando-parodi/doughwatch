@@ -18,6 +18,14 @@ The engineering objective is straightforward: **measure what fermentation is doi
 > **Prototype / research status.** DoughWatch is not yet a validated fermentation-readiness instrument. Current measurements reflect *projected dough area in the camera image*, not physical volume, and require reliability checks before readiness alerts can be trusted.
 
 
+## First field trial — candidate poolish peak (24 October 2026)
+
+[![First poolish field trial — experimental smoothed projected-area signal over 150 minutes](assets/field-run-2026-10-24.svg)](docs/field-report-2026-10-24.md)
+
+The first live run recorded **150 observations over 2 hours 30 minutes**. The prototype's **smoothed projected-image-area signal** reached **+77.53%** at approximately **21:20 Dubai time**, then ended **6.22 percentage points below that high point** about 32 minutes later. This is a **candidate fermentation peak and decline**, not yet a validated physical-volume measurement or automatic readiness determination.
+
+**[↗ Read Field Report 01 — measurements, anomalies, and next validation gates](docs/field-report-2026-10-24.md)**
+
 ## Live prototype — October 2026
 
 ![Unmodified DoughWatch v0.2 dashboard showing poolish segmentation in a fixed ROI, with a reported 31.5% projected-area change and an experimental growth chart](assets/doughwatch-live-v02.png)
@@ -98,8 +106,8 @@ This result directly informs the next design iteration.
 | Version | Milestone | Status |
 | --- | --- | --- |
 | **v0.1** | Live camera monitoring; rectangular ROI; single-edge height tracking | Completed proof of concept |
-| **v0.2** | User-traced dough silhouette; projected-area monitoring; local time series; experimental fermentation states | Running / under validation |
-| **v0.2.1** | Temporal segmentation continuity; outlier checks; verified growth trends | Planned |
+| **v0.2** | User-traced dough silhouette; projected-area monitoring; local time series; experimental fermentation states | First 150-sample field trial recorded; measurement accuracy under validation |
+| **v0.2.1** | Independent read-only anomaly validator and experimental stabilized offline tracker | Under validation; not integrated into v0.2 |
 | **Later research** | Hailo-accelerated dough segmentation; evaluation across lighting, bowls, and batches | Planned |
 
 ### Current engineering priorities
