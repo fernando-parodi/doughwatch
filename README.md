@@ -126,6 +126,24 @@ That signal will be treated as a *review prompt*, not an automatic guarantee of 
 
 Likewise, a low-activity indication must distinguish an ordinary initial lag from prolonged lack of expansion.
 
+## Open-source research toolkit
+
+**[Explore the GNU GPLv3 DoughWatch Research Toolkit](research-toolkit/)**
+
+The publicly available v0.2.1 research toolkit includes:
+
+- **Core algorithms:** optical area tracking and fermentation trend analysis.
+- **Validation sidecar:** detection and quarantine of unsupported measurement jumps.
+- **Offline replay:** reproducible analysis from archived CSV measurements and JPEG photographs.
+- **Stabilized tracker:** independent experimental mask tracking.
+- **Verification:** 14 passing automated functional and integration tests.
+
+The toolkit has been tested in two Python environments on Raspberry Pi.
+The original fermentation experiment has also been independently replayed.
+
+These are research algorithms, not a validated commercial fermentation-readiness system.
+The complete live application and original experimental datasets remain outside the public release.
+
 ## Public development approach
 
 This repository is a **curated engineering showcase and R&D log**. It documents the system concept, design decisions, prototype milestones, evidence from experiments, and lessons learned.
