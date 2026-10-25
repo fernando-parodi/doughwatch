@@ -1,0 +1,33 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local databases
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+
+# Experimental archives and generated reports
+data/
+reports/
+validation_reports/
+stabilized_offline_test/
+*_validation.csv
+*_stable_comparison.csv
+
+# Historical experiment-specific calibration
+calibration_first_run.json
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

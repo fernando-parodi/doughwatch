@@ -1,0 +1,17 @@
+{
+  "run_id": "synthetic_example",
+  "image_size_px": [345, 235],
+  "roi": [20, 10, 320, 210],
+  "points": [
+    [85, 114],
+    [96, 90],
+    [145, 72],
+    [190, 73],
+    [230, 92],
+    [235, 117],
+    [213, 146],
+    [149, 156],
+    [99, 141]
+  ],
+  "note": "Synthetic calibration example derived from the stabilized tracker test geometry. Image coordinates are in pixels. This is not a physical calibration or a validated dough contour."
+}
